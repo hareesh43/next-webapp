@@ -1,10 +1,18 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <nav>
       <div className="logo">NinjaList</div>
-      <a>Home</a>
-      <a>About</a>
-      <a>NinjaList</a>
+
+      <Link href="/">
+        <a>Home</a>
+      </Link>
+      <Link href="/about">About</Link>
+
+      <Link href="/ninjas">
+        <a>NinjaList</a>
+      </Link>
     </nav>
   );
 };
